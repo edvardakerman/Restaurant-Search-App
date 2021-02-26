@@ -17,7 +17,7 @@ const ResultsList = ({ title, results, navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}> {title}</Text>
       <FlatList
-        horizontal // = true
+        horizontal
         showsHorizontalScrollIndicator={false}
         data={results}
         keyExtractor={(result) => result.id}
@@ -39,8 +39,9 @@ const ResultsList = ({ title, results, navigation }) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: "bold",
+    color: "#f56151",
     marginLeft: 15,
     marginBottom: 5,
   },

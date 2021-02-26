@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, ScrollView } from "react-native";
+import { StyleSheet, Text, ScrollView } from "react-native";
 import SearchBar from "../components/SearchBar";
 import useResults from "../hooks/useResults";
 import ResultsList from "../components/ResultsList";
+import Logo from "../components/Logo";
 
 const SearchScreen = () => {
   const [term, setTerm] = useState("");
@@ -37,6 +38,7 @@ const SearchScreen = () => {
           title="Super Spender"
         />
       </ScrollView>
+      <Logo />
     </>
   );
 };
